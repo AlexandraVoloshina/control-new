@@ -1,0 +1,49 @@
+input {
+    padding: 0;
+    margin-top: 1rem;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+}
+
+.search, .clear {
+    border-radius: 7%;
+    color: #000;
+    font-size: 1.5rem;
+    border: none;
+    width: 100px;
+    height: 30px;
+    transition: .3s all;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    display: flex;
+
+    &:hover {
+        background: #ccc;
+    }
+}
+
+small {
+    font-size: 1rem;
+}
+
+.info {
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) and (min-width: 480px) { 
+    div{
+        font-size: 1rem;
+    }
+    table{
+        width: 80%;
+    }
+    tr {
+        height: 40px;
+    }
+}

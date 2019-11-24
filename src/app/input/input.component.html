@@ -1,0 +1,33 @@
+<h3>Для поиска истории контейнера введите его номер</h3>
+<input name="number" [(ngModel)] = "value">
+
+  <button class="search" (click)="onChange()">Поиск</button>
+  <button class="clear" (click)="clear()">Очистить</button>
+
+  <div *ngIf="idContainer;" class="info">
+  <div><strong>Номер контейнера:</strong> {{idContainer}}</div>
+  <div><strong>Владелец:</strong> {{ownerContainer}}</div>
+
+  <table class="table table-striped">
+      <thead>
+          <tr>
+              <td><small>Date (from - to)</small></td>
+              <td>DestinationPort</td>
+              <td>Recipient</td>
+              <td>Sender</td>
+              <td>SourcePort</td>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let history of historyContainer;">
+              <td><small>{{history.dateFrom}} -<br>{{history.dateTo}}</small></td>
+              <td>{{history.destinationPort}}</td>
+              <td>{{history.recipient}}</td>
+              <td>{{history.sender}}</td>
+              <td>{{history.sourcePort}}</td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+
+
