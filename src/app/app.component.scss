@@ -1,14 +1,34 @@
 .container {
     padding-top: 3rem;
-    width: 600px;
+    width: 1200px;
     margin: 0 auto;
 
     h1  {
         margin-bottom: 1rem;
     }
+}
 
+@media (max-width: 1000px) and (min-width: 800px) { 
+    .container {
+        padding-top: 3rem;
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
 
+@media (max-width: 800px) and (min-width: 600px) { 
+    .container {
+        padding-top: 3rem;
+        width: 800px;
+        margin: 0 auto;
+    }
+}
 
-
+@media (max-width: 600px) and (min-width: 400px) { 
+    .container {
+        padding-top: 3rem;
+        width: 600px;
+        margin: 0 auto;
+    }
 }
 

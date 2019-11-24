@@ -28,10 +28,6 @@ input {
     }
 }
 
-small {
-    font-size: 1rem;
-}
-
 .info {
     margin-top: 3rem;
 }
@@ -40,10 +36,10 @@ small {
     div{
         font-size: 1rem;
     }
-    table{
-        width: 80%;
-    }
-    tr {
-        height: 40px;
+}
+
+@media (max-width: 800px) and (min-width: 600px) { 
+    div{
+        font-size: 1.1rem;
     }
 }
